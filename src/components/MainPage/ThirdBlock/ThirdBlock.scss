@@ -1,0 +1,28 @@
+@import '../../../variables.scss';
+
+.third-block {
+  position: relative;
+  height: 1200px;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 25rem;
+}
+
+.third-line-left,
+.third-line-right {
+  height: 620px;
+  width: 0.2rem;
+  background-image: $gradient;
+}
+
+.third-line-left {
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+}
+
+.third-line-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

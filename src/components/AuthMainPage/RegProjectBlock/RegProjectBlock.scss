@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.reg-project-block {
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 20rem;
+  & > .title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 3rem;
+    & > h2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 42px;
+      line-height: 49px;
+      letter-spacing: 0.02em;
+      font-variant: small-caps;
+      text-transform: uppercase;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+  }
+}

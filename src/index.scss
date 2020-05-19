@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap');
+@import './variables.scss';
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// text
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  width: max-content;
+}
+
+// btns
+
+.gradient-btn {
+  background: $gradient;
+  box-shadow: 0px 6px 16px rgba(249, 72, 70, 0.25);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  transition: 1s;
+  border: 1px solid #fd7a42;
+  & > h4,
+  & > a > h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0.7rem;
+    margin: 0;
+    transition: 0.8s;
+  }
+  &:hover {
+    box-shadow: 0px 4px 16px rgba(249, 71, 70, 0.25);
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+    );
+    border: 1px solid #fd7a42;
+    & > h4,
+    & > a > h4 {
+      background: linear-gradient(90deg, #f84646 0%, #fd7a42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.white-btn {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  position: absolute;
+  top: 1165px;
+  padding: 0.4rem 6.5rem;
+  cursor: pointer;
+  transition: 1s;
+  & > h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+  }
+  &:hover {
+    background: $gradient;
+    & > h4 {
+      background: #ffffff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

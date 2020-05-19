@@ -1,0 +1,28 @@
+@import '../../../variables.scss';
+
+.form-page {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 16px;
+  background: $gradient;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+  & > .logo-block {
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+  }
+  img.close {
+    position: absolute;
+    top: 3rem;
+    right: 20%;
+    width: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

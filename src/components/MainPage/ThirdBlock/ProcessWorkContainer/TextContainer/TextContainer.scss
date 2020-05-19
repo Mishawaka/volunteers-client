@@ -1,0 +1,33 @@
+.text-container {
+    width: 23rem;
+    &:nth-child(odd) {
+        text-align: right;
+    }
+    &:nth-child(even) {
+        text-align: left;
+        margin-left: 29rem;
+        margin-bottom: -.6rem;
+        margin-top: 2rem;
+    }
+    & > h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        font-variant: small-caps;
+        text-transform: uppercase;
+        margin-bottom: -.5rem;
+    }
+    & > p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+    }
+}

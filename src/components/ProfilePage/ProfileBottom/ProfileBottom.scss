@@ -1,0 +1,181 @@
+@import '../../../variables.scss';
+
+.profile-bottom {
+  margin-top: 22rem;
+
+  .profile-btn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    button {
+      width: 25rem;
+      background: #ffffff;
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border: 0;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 15px;
+      letter-spacing: 0.02em;
+      font-variant: small-caps;
+      text-transform: uppercase;
+      color: #b8b8b8;
+
+      margin: 0;
+      padding: 2rem;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &.active,
+      &:hover {
+        background: linear-gradient(90deg, #f84646 0%, #fd7a42 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        box-shadow: 0px 6px 16px rgba(249, 72, 70, 0.25);
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 20px rgba(249, 72, 70, 0.25);
+      }
+    }
+  }
+
+  .profile-sliders-block {
+    margin: 4rem 0;
+  }
+}
+
+.project-item {
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(249, 72, 70, 0.25);
+  border-radius: 4px;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.8rem;
+  align-items: center;
+  justify-content: center;
+  height: 270px;
+  & > img:first-child {
+    border-radius: 100%;
+  }
+  & > img {
+    width: 60px;
+    height: 60px;
+  }
+  & > h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  & > p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  & > div {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & > p {
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    & > img {
+      width: 16px;
+    }
+  }
+  & p {
+    text-transform: none;
+  }
+}
+
+.event-item {
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(249, 72, 70, 0.25);
+  width: 20%;
+  border-radius: 4px;
+  margin: 1.5rem;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 21rem !important;
+  height: 270px;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 16px rgba(249, 72, 70, 0.5);
+  }
+  & > .item-flex > div > p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  & > img {
+    width: 60px;
+    border-radius: 100%;
+  }
+  & > h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  & > p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  }
+  & > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    &:first-child {
+      margin-bottom: 1.4rem;
+      border-bottom: 1px solid rgba(248, 70, 70, 0.25);
+    }
+    & > p {
+      font-size: 12px;
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

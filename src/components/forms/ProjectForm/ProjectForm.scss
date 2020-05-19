@@ -1,0 +1,84 @@
+@import '../../../variables.scss';
+
+.form > .form-group {
+  & > .auth-button {
+    margin-bottom: 4rem;
+  }
+  & > input {
+    cursor: pointer;
+  }
+  & > select {
+    width: 70%;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 2.4rem;
+    padding-left: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  & > input::before {
+    content: '';
+    background-attachment: scroll;
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+  }
+  &.facebook > input::before {
+    background: url('../../../img/facebook.svg');
+  }
+  &.inst > input::before {
+    background: url('../../../img/instagram.svg');
+  }
+}
+
+.form-group > .background {
+  width: 56px;
+  & > img {
+    width: 60%;
+    padding: 20%;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &.blocked {
+    background: $gradient;
+    border-radius: 100%;
+    transition: 2s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 16px rgba(249, 71, 71, 0.25);
+    }
+  }
+}
+
+.cut-button {
+  padding: 1rem 3rem;
+  border: none;
+  color: white;
+  background: $gradient;
+  & > h4 {
+    text-transform: uppercase;
+  }
+}
+
+.project-save {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+option.non-value {
+  background: gray;
+}

@@ -1,0 +1,62 @@
+.scope-container {
+    background: url(../../../../img/MainPageScope/Laptop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12rem 0;
+    & > .right-content > .right-content-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 24rem;
+            & > .right-content-text {
+                margin: 0 2rem;
+                text-align: left;
+            }   
+    }
+
+    & > .left-content > .left-content-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 24rem;
+            & > .left-content-text {
+                margin: 0 2rem;
+                text-align: right;
+            }   
+    }
+}
+
+.right-content-text, .left-content-text {
+    & > h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        font-variant: small-caps;
+        text-transform: uppercase;
+    }
+    & > p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+    }
+}
+
+.right-img, .left-img {
+    & > img {
+        margin-top: .8rem;
+    }
+}

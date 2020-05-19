@@ -1,0 +1,10 @@
+/**/node_modules
+
+**/build
+
+*-lock.json
+*.lock
+**/.env
+**/events/**/*.jpg
+**/projects/**/*.jpg
+**/users/**/*.jpg
